@@ -1,0 +1,23 @@
+h1 {
+    color :rgb(0, 0, 0); 
+    text-align: center;
+    font-weight: 900;
+} 
+p {
+    font-size:medium;
+    text-align:justify;
+}
+li {
+    font-size: x-large;
+    list-style-type: decimal;
+
+}
+.pruebadediv1 {
+    
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}  
+.gran-margen {
+    margin: 16px;
+}
