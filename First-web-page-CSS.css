@@ -21,3 +21,9 @@ li {
 .gran-margen {
     margin: 16px;
 }
+.hola-code {
+    background-color: gray;
+    color: red;
+    font-family: Roboto Mono,monospace;
+    overflow-wrap: anywhere;
+}
