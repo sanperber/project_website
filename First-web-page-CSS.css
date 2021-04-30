@@ -14,55 +14,53 @@ li {
     list-style-type: decimal;
 }  
 .gran-margen {
-    margin: 16px;
-}
-.hola-code {
-    /*background-color: gray;
-    color: red;
-    font-family: Roboto Mono,monospace;
-    overflow-wrap: anywhere;*/
+    margin: 0px;
 }
 .imagen {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
 }
 body {
-    margin: 0%;
-    background: teal;
+    margin: 0px;
+    background:rgb(39, 37, 37);
 }
 .contenedor {
   display: grid;
-  grid-template-rows: 1fr 5fr 1fr;
+  grid-template-rows: auto 5fr auto;
   grid-template-columns: 5fr 5fr 5fr;
   grid-template-areas: 
     "header header header"
-    "nav main aside"
-    "footer footer footer";
-  grid-gap: 10px;        
+    "izq centro der"
+    "suelo suelo suelo";
+  grid-gap: 5px;        
   height: 100vh;
-  width: 100%;    
+  width: 100%;   
   }
-  h1{
-    margin: 0%;
+  #header {
     grid-area: header;
-    background-color: black; 
+    background-color: rgb(61, 114, 61); 
   }
-  #left-side{
-    grid-area: nav;
-    background-color: white;
+  #left-side { 
+    grid-area: izq;
+    background-color: rgb(172, 43, 43);
     text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: white;
   }
   #main {
-    grid-area: main;
+    grid-area: centro;
     background-color: white;
     text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
   }
-  aside{
-    grid-area: aside;
-    background-color: white;
+  #aside{
+    grid-area: der;
+    background-color: rgb(172, 43, 43);
+    color: white;
   }
-  footer{
-    grid-area: footer;
-    background-color: lightgreen;
+  #footer{
+    grid-area: suelo;
+    background-color: rgb(61, 114, 61);
   }
-}
