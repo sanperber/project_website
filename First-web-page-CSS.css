@@ -22,45 +22,70 @@ li {
 }
 body {
     margin: 0px;
-    background:rgb(39, 37, 37);
+    background: linear-gradient(10deg, rgb(224, 54, 54), blue);
 }
 .contenedor {
   display: grid;
   grid-template-rows: auto 5fr auto;
-  grid-template-columns: 5fr 5fr 5fr;
+  grid-template-columns: 5fr 5fr;
   grid-template-areas: 
-    "header header header"
-    "izq centro der"
-    "suelo suelo suelo";
+    "header header"
+    "izq centro"
+    "suelo suelo";
   grid-gap: 5px;        
   height: 100vh;
   width: 100%;   
   }
   #header {
     grid-area: header;
-    background-color: rgb(61, 114, 61); 
+    background-color: hsl(261, 49%, 33%);
+    animation-name: opacidad;
+    animation-duration: 3s;
+  }
+  @keyframes opacidad {
+    25% {
+      opacity: 0.1;
+    }
   }
   #left-side { 
     grid-area: izq;
-    background-color: rgb(172, 43, 43);
+    background-color: transparent;
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;
     color: white;
+    animation-name: rubik;
+    animation-duration: 2s;
+    animation-delay: 2s;
+  }
+  @keyframes rubik {
+    50% {
+      opacity: 0.2;
+    }
   }
   #main {
     grid-area: centro;
-    background-color: white;
+    background-color: transparent;
     text-align: center;
     padding-left: 50px;
     padding-right: 50px;
-  }
-  #aside{
-    grid-area: der;
-    background-color: rgb(172, 43, 43);
     color: white;
+    animation-name: malab;
+    animation-duration: 2s;
+    animation-delay: 2s;
   }
+  @keyframes malab {
+    50% {
+      opacity: 0.2;
+    }
+  }
+  /*#aside{
+    grid-area: der;
+    background-color: transparent;
+    color: white;
+  }*/
   #footer{
     grid-area: suelo;
-    background-color: rgb(61, 114, 61);
+    background-color: transparent;
   }
+  
